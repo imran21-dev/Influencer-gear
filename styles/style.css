@@ -10,7 +10,7 @@
     --font-black-color: #000000;
     --orange-color: #FB8200;
     --primary-font: Poppins;
-    --secondary-font: In;
+    --secondary-font: Inter;
 
 }
 ::-webkit-scrollbar{
@@ -46,6 +46,7 @@ body{
     color: var(--font-color);
     height: 100vh;
     padding: 30px 300px;
+    
   
 }
 
@@ -169,8 +170,107 @@ body{
       justify-content: space-evenly;
       margin-top: 100px;
 }
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.items-title{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
 
-
+.item-cart{
+    width: 330px;
+    max-height: 476px;
+    box-shadow: 0px 1px 20px hsla(0, 0%, 0%, 0.092);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 5px;
+    gap: 10px;
+    margin: 0px auto;
+}
+.item-cart img{
+    width: 100%;
+}
+.item-name{
+font-size: 1.75rem;
+font-weight: 500;
+}
+.item-price{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: var(--font-black-color);
+}
+.item-cart p{
+    font-size: 0.875rem;
+    color: var(--desc-color);
+    font-weight: 700;
+}
+.star-sec{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+    gap: 10px;
+}
+.repurtaion{
+    display: flex;
+    align-items: start;
+     gap: 3px;
+    margin-top: -3px;
+}
+.item-rating{
+    font-size: 0.875rem;
+    color: var(--desc-color);
+  
+}
+.repurtaion li i{
+    color: var(--orange-color);
+    font-size: 0.7rem;
+}
+.cart-descriptions{
+    margin-top: -10px;
+}
+.items-container{
+ 
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item-cart:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 0px 1px 40px #0000003b;
+}
+.seemore{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 10px;
+}
+.seemore-cart{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.seemore-cart i{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
 
 
 
