@@ -45,13 +45,13 @@ body{
     background: var(--background-color);
     color: var(--font-color);
     height: 100vh;
-    padding: 30px 300px;
-    
+ 
   
 }
 
 
 .navbar{
+    padding: 30px 300px;
   
     display: flex;
     align-items: center;
@@ -112,6 +112,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0px 300px;
+
+
  
 }
 .banner-left-side{
@@ -143,10 +146,11 @@ body{
     justify-content: center;
     gap: 10px;
     width: 196px;
+    font-weight: 600;
 }
 .book-icon{
     font-size: 1rem;
-   font-weight: 500;
+   font-weight: 600;
     color: var(--background-color);
 }
 
@@ -160,7 +164,9 @@ body{
     background-image: url("../assets/Circle\ design.svg");
    
 }
-
+.banner-right-side img{
+    width: 90%;
+}
 .banner-footer{
       padding: 30px;
        border-top: 1px solid #0000000e;
@@ -169,16 +175,24 @@ body{
       align-items: center;
       justify-content: space-evenly;
       margin-top: 100px;
+    
+
+    
+
+}
+.images{
+    padding: 0px 300px;
+    
 }
 .main{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    padding: 0px 300px;
     padding-top: 100px;
-    padding-bottom: 200px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-bottom: 50px;
+
 }
 .items-title{
     font-size: 1.75rem;
@@ -241,6 +255,7 @@ font-weight: 500;
     margin-top: -10px;
 }
 .items-container{
+      padding: 0px 150px;
  
     width: 100%;
     display: grid;
@@ -273,33 +288,317 @@ font-weight: 500;
 }
 
 
+.features-left-side{
+    width: 404px;
+    
+}
+.features-left-side img{
+    width: 100%;
+}
+.features-right-side{
+    width: 610px;
+}
+.feature-title{
+    font-size: 2.375rem;
+    font-weight: 700;
+}
+.feature-p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--desc-color);
+}
 
+.join-now{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 8px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+}
+.join-now i{
+    color: var(--background-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.features-right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 300px;
+   padding-bottom: 80px;
+    width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer{
+    background: #20024224;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0px;
+    gap: 10px;
+   
+}
+.footer ul{
+    display: flex;
+    gap: 10px;
+}
+.footer-title{
+    font-size: 1.5rem;
+}
+.copy-p, .copy-2{
+    font-size: 0.875rem;
+    color: var(--desc-color);
+    font-weight: 600;
+}
+.footer ul li a{
+    width: 32px;
+    height: 32px;
+    background: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.footer li a i{
+    color: var(--background-color);
+}
+.copy-2{
+    margin-top: -3px;
+}
 .mobile-navbar{
     display: none;
 }
+
+@media screen and (max-width: 576px) {
+    .mobile-navbar{
+        display: flex;
+    }
+  
+    .navbar-web{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+        padding: 0;
+    }
+    .banner-right-side{
+        width: 257px;
+        height: 257px;
+      
+        background-size: cover;
+    }
+    .banner-right-side img{
+        width: 100%;
+    }
+    .logo-name{
+        font-size: 1rem;
+       
+    }
+    .banner-title{
+        font-size: 1.75rem;
+        width: 100%;
+        line-height: 35px;
+    }
+    .banner-desc{
+        font-size: 0.875rem;
+        width: 320px;
+    }
+    .banner-left-side{
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        order: 1;
+    }
+    .banner-right-side{
+        position: relative;
+        order: 0;
+    }
+    .banner-footer{
+        flex-wrap: wrap;
+        border: none;
+        gap: 10px;
+        margin-top: -20px;
+    }
+    .banner-footer img{
+        width: 22%;
+    }
+    .navbar{
+        padding: 20px 0px;
+        justify-content: space-around;
+    }
+    .images{
+        padding: 0;
+      
+    }
+    
+    body{
+        width: 100%;
+         
+    }
+   
+   
+    .banner{
+         margin-top: 20px;
+        width: 100%;
+        padding: 0px;
+        align-items: center;
+    }
+
+ 
+
+
+
+
+
+    .main{
+        padding: 0px;
+    }
+    .items-container{
+        padding: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .seemore{
+        justify-content: center;
+    }
+
+
+    .features{
+        padding: 10px 0px;
+        gap: 20px;
+        overflow-x: hidden;
+       
+        flex-direction: column;
+      
+    }
+    .features-left-side{
+        width: 70%;
+        position: relative;
+        order: 1;
+        
+    }
+    .features-right-side{
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        order: 0;
+      
+        padding: 0;
+    }
+    .feature-title{
+        font-size: 1.5rem;
+    }
+    .feature-p{
+        font-size: .8rem;
+    }
+    .footer-title{
+        font-size: 1rem;
+    }
+    .copy-p, .copy-2{
+        font-size: .75rem;
+    }
+    .footer ul li a{
+        width: 24px;
+        height: 24px;
+    }
+    .footer ul li a i{
+        font-size: .75rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+
+
+      .navbar{
+        padding: 50px 10px;
+        flex-direction: column;
+      }
+      .banner{
+        padding: 0;
+        flex-direction: column;
+      }
+      .banner-left-side{
+        position: relative;
+        order: 1;
+      
+      }
+      .banner-right-side{
+        
+         background-size: cover;
+        margin-bottom: 50px;
+      }
+      .images{
+        padding: 0;
+      }
+      .banner-footer img{
+        width: 15%;
+      }
+      .banner-footer{
+        gap: 30px;
+        flex-wrap: wrap;
+       
+      }
+      .main, .features{
+        padding: 0;
+      }
+      .items-container{
+        padding: 0;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .features{
+        flex-direction: column;
+        gap: 20px;
+      }
+      .features-left-side{
+        position: relative;
+        order: 1;
+      }
+      .features-right-side{
+        position: relative;
+        order: 0;
+        align-items: center;
+      }
+      .seemore{
+        justify-content: center;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
