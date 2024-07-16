@@ -45,7 +45,7 @@ body{
     background: var(--background-color);
     color: var(--font-color);
     height: 100vh;
-    padding: 30px 100px;
+    padding: 30px 300px;
   
 }
 
@@ -107,10 +107,11 @@ body{
 
 
 .banner{
-    padding-top: 50px;
+      padding-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+ 
 }
 .banner-left-side{
     max-width: 582px;
@@ -120,6 +121,7 @@ body{
     align-items: start;
     justify-content: center;
     gap: 30px;
+    
   
 }
 .banner-title{
@@ -155,9 +157,18 @@ body{
     align-items: center;
     justify-content: center;
     background-image: url("../assets/Circle\ design.svg");
+   
 }
 
-
+.banner-footer{
+      padding: 30px;
+       border-top: 1px solid #0000000e;
+       border-bottom: 1px solid #0000000e;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 100px;
+}
 
 
 
