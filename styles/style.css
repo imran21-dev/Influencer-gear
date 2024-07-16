@@ -45,12 +45,13 @@ body{
     background: var(--background-color);
     color: var(--font-color);
     height: 100vh;
+    padding: 30px 100px;
   
 }
 
 
 .navbar{
-    padding: 30px 100px;
+  
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,4 +102,93 @@ body{
      top: 10px;
      right: 17px;
      border: 2px solid var(--background-color);
+}
+
+
+
+.banner{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-left-side{
+    max-width: 582px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+  
+}
+.banner-title{
+    font-size: 3.25rem;
+    line-height: 65px;
+}
+.banner-desc{
+    font-size: 1rem;
+}
+.banner-left-side a{
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 50px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 196px;
+}
+.book-icon{
+    font-size: 1rem;
+   font-weight: 500;
+    color: var(--background-color);
+}
+
+
+.banner-right-side{
+    width: 475px;
+    height: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../assets/Circle\ design.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-navbar{
+    display: none;
 }
